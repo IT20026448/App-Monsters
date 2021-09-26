@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Debi\'sHut</string>
+    <string name="header">Billing Information</string>
+    <string name="name">First name and last name</string>
+    <string name="contact">Contact number</string>
+    <string name="email">Email address</string>
+    <string name="payment">Choose payment method</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="cardNo">Card number</string>
+    <string name="cvc">CVC</string>
+    <string name="button1">Proceed</string>
+    <string name="button2">Cancel</string>
+    <string name="radioButton1">Cash</string>
+    <string name="radioButton2">Card</string>
+</resources>
