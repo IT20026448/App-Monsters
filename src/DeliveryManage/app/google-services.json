@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "630263990831",
+    "project_id": "deliverymanagment-31074",
+    "storage_bucket": "deliverymanagment-31074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630263990831:android:9fd4fb1b3150837046d4da",
+        "android_client_info": {
+          "package_name": "com.example.deliverymanage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630263990831-5ns42l9p4ldfidrcg70971u5ade0io22.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deliverymanage",
+            "certificate_hash": "814394e331306fe07b2a9d5471a50ac1347f2513"
+          }
+        },
+        {
+          "client_id": "630263990831-4fvkjvmcquqfslk7hhst4ms7vf0i57l3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa0ZfvClWcWgtK-u8wtBc5WjxVncgMIQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630263990831-4fvkjvmcquqfslk7hhst4ms7vf0i57l3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
