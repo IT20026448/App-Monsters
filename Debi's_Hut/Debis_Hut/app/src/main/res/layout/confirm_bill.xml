@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="152dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/header"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="192dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/name"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="187dp"
+            android:layout_height="22dp"
+            android:hint="@string/contact"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="316dp" />
+
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/payment"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="444dp" />
+
+        <TextView
+            android:id="@+id/cardNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/cardNo"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="513dp" />
+
+        <TextView
+            android:id="@+id/cvc"
+            android:layout_width="31dp"
+            android:layout_height="20dp"
+            android:hint="@string/cvc"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="593dp" />
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="117dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/teal_200"
+            android:hint="@string/proceed"
+            android:onClick="saveUser"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="118dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/teal_200"
+            android:hint="@android:string/cancel"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

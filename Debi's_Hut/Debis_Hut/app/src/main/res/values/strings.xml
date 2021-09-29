@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Debi\'s\ Hut</string>
+    <string name="header">Billing Information</string>
+    <string name="name">First name and last name</string>
+    <string name="full_name" />
+    <string name="contact">Contact number</string>
+    <string name="email">Email</string>
+    <string name="payment">Choose payment method</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="cardNo">Card number</string>
+    <string name="card_number">xxxx xxxx xxxx xxxx</string>
+    <string name="cvc">CVC</string>
+    <string name="cvc_no">123</string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="item">Item</string>
+    <string name="description">Description</string>
+    <string name="phone_no" />
+
+    <string-array name="items">
+        <item>Pizza</item>
+        <item>Lasagna</item>
+        <item>Lava cakes</item>
+        <item>Chicken wings</item>
+        <item>Garlic bread</item>
+        <item>Birthday cakes</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Test description</item>
+        <item>Test description</item>
+        <item>Test description</item>
+        <item>Test description</item>
+        <item>Test description</item>
+        <item>Test description</item>
+    </string-array>
+</resources>
