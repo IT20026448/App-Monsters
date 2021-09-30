@@ -48,7 +48,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return db.insert(BillingController.Bill.TABLE_NAME, null, values);
     }
 
-    public List readAllInfo(){
+    public List readAll(){
         SQLiteDatabase db = getWritableDatabase();
 
         String[] projection = {
@@ -90,6 +90,11 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public void deleteInfo(String full_Name, String contact, String Email, String card_no, String cvcNo, String pay){
+        SQLiteDatabase db = getReadableDatabase();
 
+        String selection = BillingController.Bill.COLUMN_NAME_fullname + " LIKE ?";
+        String[] stringArgs = {full_Name};
+
+        db.delete(BillingController.Bill.TABLE_NAME, selection, stringArgs);
     }
 }

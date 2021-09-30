@@ -12,7 +12,7 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/header"
+            android:id="@+id/items"
             android:layout_width="152dp"
             android:layout_height="31dp"
             android:layout_marginTop="16dp"
@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/pizza"
             android:layout_width="192dp"
             android:layout_height="22dp"
             android:layout_marginTop="24dp"
@@ -34,7 +34,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.173"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/header" />
+            app:layout_constraintTop_toBottomOf="@+id/items" />
 
         <EditText
             android:id="@+id/full_name"
@@ -47,11 +47,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/pizza"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
-            android:id="@+id/contact"
+            android:id="@+id/lasagna"
             android:layout_width="187dp"
             android:layout_height="22dp"
             android:layout_marginTop="20dp"
@@ -63,7 +63,7 @@
             app:layout_constraintTop_toBottomOf="@+id/full_name" />
 
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/lavacake"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -187,7 +187,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.206"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/contact"
+            app:layout_constraintTop_toBottomOf="@+id/lasagna"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
@@ -200,7 +200,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.202"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/lavacake"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText

@@ -18,6 +18,16 @@
     <string name="prices">Prices</string>
     <string name="phone_no" />
     <string name="confirm">Confirm</string>
+    <string name="Menu">Menu</string>
+    <string name="Prices">Prices</string>
+    <string name="pizza">Pizza</string>
+    <string name="items">Item</string>
+    <string name="prices1">1000.00</string>
+    <string name="lasagna">Lasagna</string>
+    <string name="price2">800.00</string>
+    <string name="addPizza">Add</string>
+    <string name="lavacake">Lava cake</string>
+    <string name="lavaPrice">300.00</string>
 
     <string-array name="items">
         <item>Pizza</item>
