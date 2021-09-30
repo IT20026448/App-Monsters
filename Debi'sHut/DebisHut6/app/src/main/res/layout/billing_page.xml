@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="152dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/header"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="192dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/name"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="285dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="187dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/contact"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_no" />
+
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/payment"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_address" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="113dp"
+            android:layout_height="61dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payment">
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:hint="@string/cash"
+                android:textColorHint="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card"
+                android:minHeight="48dp"
+                android:textColorHint="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cardNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:hint="@string/cardNo"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="214dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/card_number"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardNo" />
+
+        <TextView
+            android:id="@+id/cvc"
+            android:layout_width="31dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/cvc"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_number" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="117dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/teal_200"
+            android:hint="@string/proceed"
+            android:onClick="saveBill"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.958"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="118dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/teal_200"
+            android:hint="@android:string/cancel"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="208dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/phone_no"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.202"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/cvc_no"
+            android:layout_width="56dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="80dp"
+            android:ems="10"
+            android:hint="@string/cvc_no"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvc"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
